@@ -1,6 +1,15 @@
-<html>
-	<body>
+<html ng-app="boxApp">
+	<body ng-controller='controller'>
 	
+        
+        <h1>Names</h1>
+        <input type="text" ng-model="newName">
+        <button ng-click="addButton()">Add</button>
+        
+        
+        <p ng-repeat="name in names">{{name}}</p>
+        
+        
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
 		<script src="app.js"></script>
 		<script src="controller.js"></script>
